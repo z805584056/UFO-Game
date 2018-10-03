@@ -47,4 +47,10 @@ public class PlayerController : MonoBehaviour {
             winText.text = "You win!";
         }
     }
+
+    private void Update()
+    {
+        if (Input.GetKey("escape"))
+            Application.Quit();
+    }
 }
